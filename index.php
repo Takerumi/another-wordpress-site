@@ -7,15 +7,15 @@
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+        <link rel="shortcut icon" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-180x180.png">
         <link rel="stylesheet" href="./styles/main.min.css">
         <?php 
             wp_head();
@@ -27,25 +27,25 @@
                 <div class="row align-items-center">
                     <div class="col-11 col-sm-12 col-md-12 col-lg-3">
                         <a href="#" class="header__logo">
-                            <img src="./img/icons/svg/logo.svg" alt="Мир детства" class="header__logo-img">
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/logo.svg" alt="Мир детства" class="header__logo-img">
                             <div class="header__logo-text">Мир детства</div>
                         </a>
                     </div>
                     <div class="col-md-12 col-lg-9 offset-lg-0 col-xl-7 offset-xl-2 ">
                         <div class="header__contacts">
                             <div class="header__contacts-item">
-                                <img src="./img/icons/svg/email.svg" alt="почта" class="header__contacts-logo">
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/email.svg" alt="почта" class="header__contacts-logo">
                                 <a href="mailto:mirdetstva@gmail.com" class="header__contacts-mail">mirdetstva@gmail.com</a>
                             </div>
                             <div class="header__contacts-item">
-                                <img src="./img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
                                 <div class="header__contacts-tel">
                                     <a href="tel:+797867834347">+797867834347</a>
                                     <a href="tel:+797867834358">+797867834358</a>
                                 </div>
                             </div>
                             <div class="header__contacts-item">
-                                <img src="./img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
                                 <address>ул. Василисы Кожиной, 1<br>
                                     Москва, Россия, 121096</address>
                             </div>
@@ -82,7 +82,7 @@
         <div class="mainslider glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li style="background-image: url('./img/bg_1.jpg')" class="glide__slide">
+                    <li style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/bg_1.jpg')" class="glide__slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 offset-1">
@@ -102,7 +102,7 @@
                             </button>
                         </div>
                     </li>
-                    <li style="background-image: url('./img/bg_2.jpg')" class="glide__slide">
+                    <li style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/bg_2.jpg')" class="glide__slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 offset-1">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                     </li>
-                    <li style="background-image: url('./img/bg_3.jpg')" class="glide__slide">
+                    <li style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/bg_3.jpg')" class="glide__slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 offset-1">
@@ -151,7 +151,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1">
                         <div class="about__img">
-                            <img src="./img/about.jpg" alt="про компанию">
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/about.jpg" alt="про компанию">
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 offset-xl-1">
@@ -171,7 +171,7 @@
                 <div class="title">Наша команда</div>
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <img class="specialists__img" src="./img/team.jpg" alt="наша команда">
+                        <img class="specialists__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/team.jpg" alt="наша команда">
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
             <div class="container">
                 <h2 class="subtitle">Мягкие игрушки</h2>
                 <div class="toys__wrapper">
-                    <div class="toys__item" style="background-image: url(./img/toy_1.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_1.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Плюшевые медведи</div>
                             <div class="toys__item-descr">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(./img/toy_2.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_2.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Совенок</div>
                             <div class="toys__item-descr">
@@ -201,7 +201,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(./img/toy_3.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_3.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Кролики</div>
                             <div class="toys__item-descr">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(./img/toy_4.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_4.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Гибкие</div>
                             <div class="toys__item-descr">
@@ -219,7 +219,7 @@
                             <div class="minibutton toys__trigger">Подробнее</div>
                         </div>
                     </div>
-                    <div class="toys__item" style="background-image: url(./img/toy_5.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_5.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Персонажи</div>
                             <div class="toys__item-descr">
@@ -228,7 +228,7 @@
                             <div class="minibutton toys__trigger">Подробнее</div>
                         </div>
                     </div>
-                    <div class="toys__item" style="background-image: url(./img/toy_6.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_6.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Необычные</div>
                             <div class="toys__item-descr">
@@ -243,7 +243,7 @@
                 <h2 class="subtitle">Развивающие игрушки</h2>
                 <div class="toys__wrapper">
 
-                    <div class="toys__item" style="background-image: url(./img/toy_7.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_7.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Воздушный змей</div>
                             <div class="toys__item-descr">
@@ -253,7 +253,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(./img/toy_8.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_8.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Музыкальные</div>
                             <div class="toys__item-descr">
@@ -289,13 +289,13 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="./img/about_1.jpg" alt="мир детства">
+                        <img class="aboutus__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/about_1.jpg" alt="мир детства">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="./img/about_2.jpg" alt="мир детства">
+                        <img class="aboutus__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/about_2.jpg" alt="мир детства">
                     </div>
                     <div class="col-lg-6">
                         <div class="subtitle">
@@ -321,7 +321,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="./img/about_3.jpg" alt="мир детства">
+                        <img class="aboutus__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/about_3.jpg" alt="мир детства">
                     </div>
                 </div>
             </div>
@@ -691,7 +691,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3">
                         <a href="#" class="footer__logo">
-                            <img src="./img/icons/svg/logo.svg" alt="мир детства" class="footer__logo-img">
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/logo.svg" alt="мир детства" class="footer__logo-img">
                             <div class="footer__logo-text">мир детства</div>
                         </a>
                     </div>
@@ -722,14 +722,14 @@
                     <div class="col-md-8 offset-md-0 col-lg-6 col-xl-5 offset-xl-1">
                         <div class="footer__contacts">
                             <div class="footer__contacts-item">
-                                <img src="./img/icons/svg/phone.svg" alt="телефон" class="footer__contacts-logo">
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="footer__contacts-logo">
                                 <div class="footer__contacts-tel">
                                     <a href="tel:+797867834347">+797867834347</a>
                                     <a href="tel:+797867834358">+797867834358</a>
                                 </div>
                             </div>
                             <div class="footer__contacts-item">
-                                <img src="./img/icons/svg/pointer.svg" alt="указатель" class="footer__contacts-logo">
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="footer__contacts-logo">
                                 <address>ул. Василисы Кожиной, 1<br>
                                     Москва, Россия, 121096</address>
                             </div>
