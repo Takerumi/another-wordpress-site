@@ -1,5 +1,5 @@
 <?php
-    get_header();
+    get_header(); // get header from external file
 ?>
 
         <div class="mainslider glide">
@@ -504,6 +504,7 @@
             </div>
         </div>
 
+
 <?php
-    get_footer();
+    get_footer(); // get footer from external file
 ?>
