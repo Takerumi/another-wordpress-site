@@ -108,9 +108,10 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3">
-                        <a href="#" class="footer__logo">
-                          <?php the_custom_logo(); ?> // выводим логотип сайта из кастомайзера
-                        </a>
+                    <!-- выводим логотип сайта из кастомайзера -->
+                    <div class="footer__logo">
+                      <?php the_custom_logo(); ?> 
+                    </div>
                     </div>
                     <div class="col-md-4 col-lg-3">
                         <div class="footer__social">
