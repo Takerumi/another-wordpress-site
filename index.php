@@ -325,7 +325,7 @@
                                             </linearGradient>
                                             </defs>
                                         </svg>
-                                        <a href="tel:+797867834347">+797867834347</a>
+                                        <a href="tel:<?php the_field('phone_1', 2); ?>"><?php the_field('phone_1', 2); ?></a>
                                     </div>
                                 </div>
                                 <div class="contacts__phoneblock">
@@ -375,7 +375,7 @@
                                             </linearGradient>
                                             </defs>
                                         </svg>
-                                        <a href="tel:+797867834358">+797867834358</a>
+                                        <a href="tel:<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
                                     </div>
                                 </div>
                             </div>
