@@ -98,7 +98,7 @@
         </div>
         <div class="specialists" id="specialists">
             <div class="container">
-                <div class="title"><?php the_field('team_title', 2) ?></div>
+                <div class="title"><?php the_field('team_title', 2); ?></div>
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <!-- подставляем только ссылку на изображение -->
@@ -207,31 +207,31 @@
 
         <div class="aboutus" id="aboutus">
             <div class="container">
-                <h1 class="title"><?php the_field('aboutus_title', 2) ?></h1>
+                <h1 class="title"><?php the_field('aboutus_title', 2); ?></h1>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subtitle">
-                            <?php the_field('aboutus_subtitle_1', 2) ?>
+                            <?php the_field('aboutus_subtitle_1', 2); ?>
                         </div>
                         <div class="aboutus__text">
-                        <?php the_field('aboutus_descr_1', 2) ?>
+                        <?php the_field('aboutus_descr_1', 2); ?>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="<?php the_field('aboutus_img_1', 2) ?>" alt="мир детства">
+                        <img class="aboutus__img" src="<?php the_field('aboutus_img_1', 2); ?>" alt="мир детства">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="<?php the_field('aboutus_img_2', 2) ?>" alt="мир детства">
+                        <img class="aboutus__img" src="<?php the_field('aboutus_img_2', 2); ?>" alt="мир детства">
                     </div>
                     <div class="col-lg-6">
                         <div class="subtitle">
-                            <?php the_field('aboutus_subtitle_2', 2) ?>
+                            <?php the_field('aboutus_subtitle_2', 2); ?>
                         </div>
                         <div class="aboutus__text">
-                        <?php the_field('aboutus_descr_2', 2) ?>
+                        <?php the_field('aboutus_descr_2', 2); ?>
                         </div>
                     </div>
                 </div>
@@ -239,14 +239,14 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subtitle">
-                            <?php the_field('aboutus_subtitle_3', 2) ?>
+                            <?php the_field('aboutus_subtitle_3', 2); ?>
                         </div>
                         <div class="aboutus__text">
-                        <?php the_field('aboutus_descr_3', 2) ?>
+                        <?php the_field('aboutus_descr_3', 2); ?>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="<?php the_field('aboutus_img_3', 2) ?>" alt="мир детства">
+                        <img class="aboutus__img" src="<?php the_field('aboutus_img_3', 2); ?>" alt="мир детства">
                     </div>
                 </div>
             </div>
@@ -258,9 +258,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="contacts__descr underlined">
-                            Мы находимся в Москве, метро "Парк победы", в деловом центре "Парк победы", второй этаж
-                            <br> <br>
-                            по адресу ул. Василисы Кожиной, 1
+                            <?php the_field('address_descr', 2); ?>
                         </div>
                     </div>
                     <div class="col-lg-6">
