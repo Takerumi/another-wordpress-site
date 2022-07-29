@@ -381,7 +381,7 @@
                             </div>
                             <div class="contacts__mail">
                                 Или напишите нам на почту
-                                <a href="mailto:mirdetstva@gmail.com">mirdetstva@gmail.com</a>
+                                <a href="mailto:<?php the_field('mail', 2); ?>"><?php the_field('mail', 2); ?></a>
                             </div>
                         </div>
                     </div>
