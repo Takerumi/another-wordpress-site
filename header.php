@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        // формируем динамический тайтл
+         <!-- формируем динамический тайтл -->
 		<title><?php bloginfo('name'); echo " | "; bloginfo('description'); ?></title>
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
