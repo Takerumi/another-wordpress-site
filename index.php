@@ -472,32 +472,36 @@
                         <div class="feedslider glide">
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
+                                <?php
+                        // параметры по умолчанию
+                        $posts = get_posts( array(
+                            'numberposts' => -1,
+                            'category_name'    => 'reviews',
+                            'orderby'     => 'date',
+                            'order'       => 'ASC',
+                            'post_type'   => 'post',
+                            'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                        ) );
+
+                        foreach( $posts as $post ){
+                            setup_postdata( $post );
+                            ?>
+
                                     <li class="glide__slide">
                                         <div class="feedslider__title">
-                                            Иванов Игорь
+                                            <?php the_title(); ?>
                                         </div>
                                         <div class="feedslider__text">
-                                            Спасибо огромное за вежливость и терпение. Обратился к вам только с идеей для подарка, а вы развили её до полноценного проекта! Так что мой сын теперь круглые сутки играет с железной дорогой, построенной по его планам)
-                                            <br><br>
-                                            Отдельное спасибо менеджеру Маргарите за терпение и стойкость!
+                                        <?php the_field('review_text'); ?>
                                         </div>
                                     </li>
-                                    <li class="glide__slide">
-                                        <div class="feedslider__title">
-                                            Черкессов Алексей Дмитриевич
-                                        </div>
-                                        <div class="feedslider__text">
-                                            Заказывал у ребят целую партию игрушек для детского сада. Новый год прошел на ура! Теперь все детишки счастливы и не расстаются со своими подарками, а самые хитрые спрашивают когда следующие праздники)
-                                        </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div class="feedslider__title">
-                                            Анна Сергеевна
-                                        </div>
-                                        <div class="feedslider__text">
-                                            Решила к дню рождения своей малышки заказать подарки здесь. И ни сколько не жалею! Мишка именно такой, как я хотела, прямо как у меня в детстве: мягкий, приятный на ощупь и оочень милый. Сразу видно, что ручная работа.
-                                        </div>
-                                    </li>
+
+                                    <?php
+                        }
+
+                        wp_reset_postdata(); // сброс
+                    ?>
+                    
                                 </ul>
                             </div>
 
